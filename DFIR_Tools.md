@@ -1,8 +1,9 @@
 ## DFIR Tools
 
+## Network Evidence Acquisition
+
 | Tools | Description | Link/Installation |
 |-------|-------------|------|
-| **Network Evidence Acquisition** |
 | `Firewall Logs` | - | - |
 | `Proxy Logs` | - | - |
 | `VPN Logs` | - | - |
