@@ -32,6 +32,8 @@
 | `MagnetRAM` | Memory Acqusition | https://www.magnetforensics.com/resources/magnet-dumpit-for-windows/ |
 | `dumpit` | Memory Acqusition | - |
 ### Non-volatile Evidence
+| Tools | Description | Link/Installation |
+|-------|-------------|------|
 | `KAPE` | 	Kroll Artifact Parser/Extractor | https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape |
 | `FTK Imager` | DISK Acquisiton | https://www.exterro.com/ftk-imager |
 
@@ -43,6 +45,8 @@
 | `MemProcFs` | - | https://github.com/ufrisk/MemProcFS |
 | `Rekall` | - | http://www.rekall-forensic.com/ |
 ### Non-volatile Evidence
+| Tools | Description | Link/Installation |
+|-------|-------------|------|
 | `Autopsy` | - | https://www.autopsy.com/download/ |
 | `AmcacheParser` | - | https://f001.backblazeb2.com/file/EricZimmermanTools/AmcacheParser.zip |
 | `MFTECmd` | - | https://f001.backblazeb2.com/file/EricZimmermanTools/MFTECmd.zip |
