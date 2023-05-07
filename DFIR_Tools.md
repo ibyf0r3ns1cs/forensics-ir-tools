@@ -3,6 +3,10 @@
 | Tools | Description | Link/Installation |
 |-------|-------------|------|
 | **Network Evidence Acquisition** |
+| `Firewall Logs` | - | - |
+| `Proxy Logs` | - | - |
+| `VPN Logs` | - | - |
+| `Netflow Logs` | - | - |
 | `WinPcap` | Must be installed on the system | https://www.winpcap.org |
 | `RawPCAP` | CLI Tool | https://www.netresec.com/?page=RawCap |
 | `WireShark` | Network traffic capture | https://www.wireshark.org/download.html |
@@ -15,8 +19,28 @@
 | `WireShark` | Network traffic capture | https://www.wireshark.org/download.html |
 | `Arkime` | etwork traffic capture | https://arkime.com/index.html#downloads |
 | **Host-Base Evidence Acquisition** |
-| `WinPcap` | Some description | https://www.winpcap.org |
+| ** Volatile Evidence ** |
+| `FTK Imager` | GUI Memory Acquisiton | https://www.exterro.com/ftk-imager |
+| `WinPmem` | CLI Memory Acqusition | https://github.com/Velocidex/WinPmem |
+| `RAM Capture` | Memory Acqusition | https://belkasoft.com/get |
+| `MagnetRAM` | Memory Acqusition | https://www.magnetforensics.com/resources/magnet-dumpit-for-windows/ |
+| `dumpit` | Memory Acqusition | - |
+| ** Non-volatile Evidence ** |
+| `KAPE` | 	Kroll Artifact Parser/Extractor | https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape |
+| `FTK Imager` | DISK Acquisiton | https://www.exterro.com/ftk-imager |
 | **Host-Base Evidence Invesgiation** |
-| `WinPcap` | Some description | https://www.winpcap.org |
+| ** Volatile Evidence ** |
+| `Volatility` | - | https://www.volatilityfoundation.org/releases |
+| `MemProcFs` | - | https://github.com/ufrisk/MemProcFS |
+| `Rekall` | - | http://www.rekall-forensic.com/ |
+| ** Non-volatile Evidence ** |
+| `Autopsy` | - | https://www.autopsy.com/download/ |
+| `AmcacheParser` | - | https://f001.backblazeb2.com/file/EricZimmermanTools/AmcacheParser.zip |
+| `MFTECmd` | - | https://f001.backblazeb2.com/file/EricZimmermanTools/MFTECmd.zip |
+| `RegistryExplorer` | - | https://f001.backblazeb2.com/file/EricZimmermanTools/RegistryExplorer.zip |
+| `TimeLineExplorer` | - | https://f001.backblazeb2.com/file/EricZimmermanTools/TimelineExplorer.zip |
+| `Hayabusa` | - | https://github.com/Yamato-Security/hayabusa |
+| `Chainsaw` | - | [http://www.rekall-forensic.com/](https://github.com/WithSecureLabs/chainsaw) |
+
 | **Resources** |
-| `EricZimmerman_Tools` | Some description | https://ericzimmerman.github.io/#!index.md |
+| `EricZimmerman_Tools` | - | https://ericzimmerman.github.io/#!index.md |
