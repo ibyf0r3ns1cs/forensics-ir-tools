@@ -11,7 +11,7 @@
 | `RawPCAP` | CLI Tool | https://www.netresec.com/?page=RawCap |
 | `WireShark` | Network traffic capture | https://www.wireshark.org/download.html |
 
-## Network Evidence Investigation*
+## Network Evidence Investigation
 | Tools | Description | Link/Installation |
 |-------|-------------|------|
 | `mergecap` | Merges two or more capture files into one | https://www.wireshark.org/docs/man-pages/mergecap.html |
@@ -22,22 +22,27 @@
 | `WireShark` | Network traffic capture | https://www.wireshark.org/download.html |
 | `Arkime` | etwork traffic capture | https://arkime.com/index.html#downloads |
 
-## Host-Base Evidence Acquisition** |
-| ** Volatile Evidence ** |
+## Host-Base Evidence Acquisition**
+### Volatile Evidence
+| Tools | Description | Link/Installation |
+|-------|-------------|------|
 | `FTK Imager` | GUI Memory Acquisiton | https://www.exterro.com/ftk-imager |
 | `WinPmem` | CLI Memory Acqusition | https://github.com/Velocidex/WinPmem |
 | `RAM Capture` | Memory Acqusition | https://belkasoft.com/get |
 | `MagnetRAM` | Memory Acqusition | https://www.magnetforensics.com/resources/magnet-dumpit-for-windows/ |
 | `dumpit` | Memory Acqusition | - |
-| ** Non-volatile Evidence ** |
+### Non-volatile Evidence
 | `KAPE` | 	Kroll Artifact Parser/Extractor | https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape |
 | `FTK Imager` | DISK Acquisiton | https://www.exterro.com/ftk-imager |
-| **Host-Base Evidence Invesgiation** |
-| ** Volatile Evidence ** |
+
+## Host-Base Evidence Invesgiation
+### Volatile Evidence
+| Tools | Description | Link/Installation |
+|-------|-------------|------|
 | `Volatility` | - | https://www.volatilityfoundation.org/releases |
 | `MemProcFs` | - | https://github.com/ufrisk/MemProcFS |
 | `Rekall` | - | http://www.rekall-forensic.com/ |
-| ** Non-volatile Evidence ** |
+### Non-volatile Evidence
 | `Autopsy` | - | https://www.autopsy.com/download/ |
 | `AmcacheParser` | - | https://f001.backblazeb2.com/file/EricZimmermanTools/AmcacheParser.zip |
 | `MFTECmd` | - | https://f001.backblazeb2.com/file/EricZimmermanTools/MFTECmd.zip |
@@ -46,5 +51,5 @@
 | `Hayabusa` | - | https://github.com/Yamato-Security/hayabusa |
 | `Chainsaw` | - | [http://www.rekall-forensic.com/](https://github.com/WithSecureLabs/chainsaw) |
 
-| **Resources** |
-| `EricZimmerman_Tools` | - | https://ericzimmerman.github.io/#!index.md |
+## Resources
+`EricZimmerman_Tools` - https://ericzimmerman.github.io/#!index.md |
