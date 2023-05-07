@@ -22,7 +22,7 @@
 | `WireShark` | Network traffic capture | https://www.wireshark.org/download.html |
 | `Arkime` | etwork traffic capture | https://arkime.com/index.html#downloads |
 
-## Host-Base Evidence Acquisition**
+## Host-Base Evidence Acquisition
 ### Volatile Evidence
 | Tools | Description | Link/Installation |
 |-------|-------------|------|
