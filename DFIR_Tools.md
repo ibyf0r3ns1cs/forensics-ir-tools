@@ -11,7 +11,10 @@
 | `WinPcap` | Must be installed on the system | https://www.winpcap.org |
 | `RawPCAP` | CLI Tool | https://www.netresec.com/?page=RawCap |
 | `WireShark` | Network traffic capture | https://www.wireshark.org/download.html |
-| **Network Evidence Investigation** |
+## Network Evidence Investigation** 
+
+| Tools | Description | Link/Installation |
+|-------|-------------|------|
 | `mergecap` | Merges two or more capture files into one | https://www.wireshark.org/docs/man-pages/mergecap.html |
 | `editcap` | Edit and/or translate the format of capture files | https://www.wireshark.org/docs/man-pages/editcap.html |
 | `dnstop` | Monitor and display DNS server traffic on your network | sudo apt-get install dnstop |
