@@ -1,7 +1,6 @@
 ## DFIR Tools
 
 ## Network Evidence Acquisition
-
 | Tools | Description | Link/Installation |
 |-------|-------------|------|
 | `Firewall Logs` | - | - |
@@ -11,8 +10,8 @@
 | `WinPcap` | Must be installed on the system | https://www.winpcap.org |
 | `RawPCAP` | CLI Tool | https://www.netresec.com/?page=RawCap |
 | `WireShark` | Network traffic capture | https://www.wireshark.org/download.html |
-## Network Evidence Investigation** 
 
+## Network Evidence Investigation*
 | Tools | Description | Link/Installation |
 |-------|-------------|------|
 | `mergecap` | Merges two or more capture files into one | https://www.wireshark.org/docs/man-pages/mergecap.html |
@@ -22,7 +21,8 @@
 | `NetworkMiner` | Network forensics tool | https://www.netresec.com/?page=NetworkMiner |
 | `WireShark` | Network traffic capture | https://www.wireshark.org/download.html |
 | `Arkime` | etwork traffic capture | https://arkime.com/index.html#downloads |
-| **Host-Base Evidence Acquisition** |
+
+## Host-Base Evidence Acquisition** |
 | ** Volatile Evidence ** |
 | `FTK Imager` | GUI Memory Acquisiton | https://www.exterro.com/ftk-imager |
 | `WinPmem` | CLI Memory Acqusition | https://github.com/Velocidex/WinPmem |
