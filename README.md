@@ -5,5 +5,3 @@ This repository contains a digital forensic tool that is designed to assist digi
 * Network Evidence Analysis and Investigation - which enables the analysis and investigation of network evidence that has been collected.
 * Host-Based Evidence Acquisition - which facilitates the collection of both volatile and non-volatile data from a compromised system.
 * Host-Based Evidence Analysis and Investigation - which enables the analysis of the Host-Based evidence that has been collected.
-
-## Check out the Directories if you are lookig for Tools of specific Types.
