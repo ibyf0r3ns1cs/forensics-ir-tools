@@ -17,7 +17,7 @@ The script retrieves a list of running processes and iterates through each proce
 Runs the script to check for unsigned processes and display information about unsigned processes.
 
 .AUTHOR
-Author: Idan-Beit-Yosef @ IBYf0r3ns1cs
+Idan-Beit-Yosef @ IBYf0r3ns1cs
 #>
 
 $runningProcesses = Get-Process
