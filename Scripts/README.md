@@ -8,3 +8,6 @@ Retrieves the hashes and command lines of running processes.
 
 ## CheckUnsignedProcesses
 Checks if running processes are signed.
+
+## GetAllTaskSchedules.ps1
+Retrieves information about all task schedules in the system
