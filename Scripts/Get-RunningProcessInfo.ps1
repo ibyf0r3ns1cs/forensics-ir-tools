@@ -17,7 +17,7 @@ The script gets a list of running processes using the Get-Process cmdlet. It the
 Runs the script to retrieve the hashes and command lines of running processes and displays the process names, command lines, along with their hashes.
 
 .AUTHOR
-Author: Idan-Beit-Yosef @ IBYf0r3ns1cs
+Idan-Beit-Yosef @ IBYf0r3ns1cs
 #>
 
 $runningProcesses = Get-Process
