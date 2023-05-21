@@ -1,7 +1,5 @@
 <#
 
-Author: Idan-Beit-Yosef @ IBYf0r3ns1cs
-
 .SYNOPSIS
 This script checks if running processes are signed and prints information about unsigned processes including their name, full path, and hash.
 
@@ -18,6 +16,8 @@ The script retrieves a list of running processes and iterates through each proce
 .\CheckUnsignedProcesses.ps1
 Runs the script to check for unsigned processes and display information about unsigned processes.
 
+.AUTHOR
+Author: Idan-Beit-Yosef @ IBYf0r3ns1cs
 #>
 
 $runningProcesses = Get-Process
