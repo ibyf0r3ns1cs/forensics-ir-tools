@@ -1,7 +1,5 @@
 <#
 
-Author: Idan-Beit-Yosef @ IBYf0r3ns1cs
-
 .SYNOPSIS
 This script retrieves the hashes and command lines of running processes and prints the process name, command line, along with their corresponding hashes.
 
@@ -17,6 +15,9 @@ The script gets a list of running processes using the Get-Process cmdlet. It the
 .EXAMPLE
 .\GetProcessHashes.ps1
 Runs the script to retrieve the hashes and command lines of running processes and displays the process names, command lines, along with their hashes.
+
+.AUTHOR
+Author: Idan-Beit-Yosef @ IBYf0r3ns1cs
 #>
 
 $runningProcesses = Get-Process
