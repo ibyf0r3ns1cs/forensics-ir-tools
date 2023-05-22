@@ -7,7 +7,7 @@ YaraRulesExtractor.py splits a YARA rule file containing multiple rules into sep
 Retrieves the hashes and command lines of running processes.
 
 ## CheckUnsignedProcesses.ps1
-Checks if running processes are signed.
+Check if the running processes are signed, and print the list of unsigned processes.
 
 ## GetAllTaskSchedules.ps1
 Retrieves information about all task schedules in the system
