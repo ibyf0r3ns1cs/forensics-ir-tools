@@ -1,5 +1,5 @@
 ## Network Evidence Acquisition
-| Tools | Description | Link/Installation | Command |  
+| Tools | Description | Link/Installation |
 |-------|-------------|------|
 | `Firewall Logs` | - | - |
 | `Proxy Logs` | - | - |
