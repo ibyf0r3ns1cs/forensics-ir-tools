@@ -1,7 +1,7 @@
 ## Network Evidence Acquisition
 | Tools | Description | Link/Installation | Command |
 |-------|-------------|------|
-| `Firewall Logs` | - | - |
+| `Firewall Logs` | - | - | - |
 | `Proxy Logs` | - | - | - |
 | `VPN Logs` | - | - | - |
 | `Netflow Logs` | - | - | - |
