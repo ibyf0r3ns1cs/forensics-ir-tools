@@ -1,7 +1,7 @@
 # Scripts
 
 ## YaraRulesExtractor.py
-Splits a YARA rule file containing multiple rules into separate files, each containing a single rule.
+Splits a YARA rule file containing multiple rules into separate files, each containing a single rule.  
 Note: The script does not add the "import pe" command, so you will need to add it manually if required.
 
 ## Get-RunningProcessInfo.ps1
