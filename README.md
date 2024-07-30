@@ -1,7 +1,8 @@
 # DFIR-Tools 
 
-This repository contains a digital forensic tool that is designed to assist digital forensics professionals and researchers in analyzing and extracting evidence from digital devices. The tool includes several modules, including:
-* Network Evidence Acquisition - which allows for the collection of network evidence from a compromised system.
-* Network Evidence Analysis and Investigation - which enables the analysis and investigation of network evidence that has been collected.
-* Host-Based Evidence Acquisition - which facilitates the collection of both volatile and non-volatile data from a compromised system.
-* Host-Based Evidence Analysis and Investigation - which enables the analysis of the Host-Based evidence that has been collected.
+This repository contains digital forensic tools to assist professionals and researchers in analyzing and extracting evidence from digital devices. The tools are categorized into:  
+
+* Volatile Evidence - Tools for acquiring and analyzing volatile data from compromised systems.
+* Non-volatile Evidence - Tools for acquiring and analyzing non-volatile data from compromised systems.
+* Network Evidence - Tools for acquiring and analyzing network evidence.
+* Scripts - Useful scripts for various forensic tasks.
