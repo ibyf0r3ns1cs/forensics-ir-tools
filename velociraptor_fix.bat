@@ -8,13 +8,13 @@ echo ======================================= >> "%LOGFILE%"
 echo Stopping Velociraptor service...
 net stop velociraptor >> "%LOGFILE%" 2>&1
 
-echo Running Velociraptor manually with debug for 30 seconds...
+echo Running Velociraptor manually with debug for 2 minutes...
 start "" cmd /c ^
 ""C:\Program Files\Velociraptor\Velociraptor.exe" ^
  --config "C:\Program Files\Velociraptor\client.config.yaml" ^
  service run -v --debug >> "%LOGFILE%" 2>&1"
 
-timeout /t 30 /nobreak >nul
+timeout /t 120 /nobreak >nul
 
 echo Stopping manual Velociraptor process...
 taskkill /f /im Velociraptor.exe >> "%LOGFILE%" 2>&1
