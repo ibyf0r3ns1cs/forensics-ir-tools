@@ -10,7 +10,7 @@ echo ======================================= >> "%LOGFILE%"
 echo Stopping Velociraptor service...
 sc stop velociraptor >> "%LOGFILE%" 2>&1
 
-REM Wait until service is fully stopped
+REM Wait until service is reported as STOPPED
 :WAIT_STOP
 sc query velociraptor | find "STOPPED" >nul
 if errorlevel 1 (
@@ -18,23 +18,29 @@ if errorlevel 1 (
     goto WAIT_STOP
 )
 
+echo Service reported STOPPED. Waiting extra 30 seconds for cleanup...
+timeout /t 30 /nobreak >nul
+
 echo Starting Velociraptor manually with debug...
 start "" /b "%VELO%" --config "%CONF%" service run -v --debug >> "%LOGFILE%" 2>&1
 
-REM Give process a moment to start
-timeout /t 3 >nul
+REM Give process time to initialize
+timeout /t 5 >nul
 
-REM Capture PID (best effort)
+REM Capture PID of the debug instance
 for /f "tokens=2 delims== " %%P in (
   'wmic process where "name='Velociraptor.exe'" get ProcessId /value ^| find "="'
 ) do set PID=%%P
 
-echo Velociraptor PID=%PID% >> "%LOGFILE%"
+echo Velociraptor debug PID=%PID% >> "%LOGFILE%"
 
 timeout /t 120 /nobreak >nul
 
 echo Stopping manual Velociraptor process PID %PID% ...
 taskkill /f /pid %PID% >> "%LOGFILE%" 2>&1
+
+echo Waiting 5 seconds before restarting service...
+timeout /t 5 >nul
 
 echo Starting Velociraptor service again...
 sc start velociraptor >> "%LOGFILE%" 2>&1
