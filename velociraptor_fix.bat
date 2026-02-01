@@ -1,18 +1,28 @@
 @echo off
-echo [*] Stopping Velociraptor service...
-net stop velociraptor
+set LOGFILE=C:\ProgramData\velociraptor_fix_log.txt
 
-echo [*] Starting Velociraptor manually for 20 seconds...
-start "" "C:\Program Files\Velociraptor\Velociraptor.exe" ^
-  --config "C:\Program Files\Velociraptor\client.config.yaml" ^
-  service run
+echo ======================================= >> "%LOGFILE%"
+echo [%DATE% %TIME%] Velociraptor fix started >> "%LOGFILE%"
+echo ======================================= >> "%LOGFILE%"
 
-timeout /t 20 /nobreak >nul
+echo Stopping Velociraptor service...
+net stop velociraptor >> "%LOGFILE%" 2>&1
 
-echo [*] Stopping manual Velociraptor run...
-taskkill /f /im Velociraptor.exe >nul 2>&1
+echo Running Velociraptor manually with debug for 30 seconds...
+start "" cmd /c ^
+""C:\Program Files\Velociraptor\Velociraptor.exe" ^
+ --config "C:\Program Files\Velociraptor\client.config.yaml" ^
+ service run -v --debug >> "%LOGFILE%" 2>&1"
 
-echo [*] Starting Velociraptor service again...
-net start velociraptor
+timeout /t 30 /nobreak >nul
 
-echo [✓] Done.
+echo Stopping manual Velociraptor process...
+taskkill /f /im Velociraptor.exe >> "%LOGFILE%" 2>&1
+
+echo Starting Velociraptor service again...
+net start velociraptor >> "%LOGFILE%" 2>&1
+
+echo [%DATE% %TIME%] Velociraptor fix completed >> "%LOGFILE%"
+echo. >> "%LOGFILE%"
+
+echo Done. Log written to %LOGFILE%
