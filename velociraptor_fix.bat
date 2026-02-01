@@ -1,7 +1,7 @@
 @echo off
 set LOGFILE=C:\ProgramData\velociraptor_fix_log.txt
-set VELO="C:\Program Files\Velociraptor\Velociraptor.exe"
-set CONF="C:\Program Files\Velociraptor\client.config.yaml"
+set VELO=C:\Program Files\Velociraptor\Velociraptor.exe
+set CONF=C:\Program Files\Velociraptor\client.config.yaml
 
 echo ======================================= >> "%LOGFILE%"
 echo [%DATE% %TIME%] Velociraptor fix started >> "%LOGFILE%"
@@ -21,8 +21,13 @@ if errorlevel 1 (
 echo Starting Velociraptor manually with debug...
 start "" /b "%VELO%" --config "%CONF%" service run -v --debug >> "%LOGFILE%" 2>&1
 
-REM Capture PID of the started Velociraptor process
-for /f "tokens=2 delims== " %%P in ('wmic process where "name='Velociraptor.exe'" get ProcessId /value ^| find "="') do set PID=%%P
+REM Give process a moment to start
+timeout /t 3 >nul
+
+REM Capture PID (best effort)
+for /f "tokens=2 delims== " %%P in (
+  'wmic process where "name='Velociraptor.exe'" get ProcessId /value ^| find "="'
+) do set PID=%%P
 
 echo Velociraptor PID=%PID% >> "%LOGFILE%"
 
@@ -36,3 +41,5 @@ sc start velociraptor >> "%LOGFILE%" 2>&1
 
 echo [%DATE% %TIME%] Velociraptor fix completed >> "%LOGFILE%"
 echo. >> "%LOGFILE%"
+
+echo Done. Log written to %LOGFILE%
